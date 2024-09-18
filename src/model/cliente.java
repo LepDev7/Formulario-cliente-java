@@ -2,7 +2,7 @@ package model;
 
 import java.util.Date;
 
-public class cliente {
+public class Cliente {
 // Atributos
 	private int id_cliente;
 	private String Nome_Cli;
@@ -25,7 +25,7 @@ public class cliente {
 	private Date Data_cad_cli;
 	
 	// Construtor
-	public void Cliente () {
+	public Cliente () {
 		
 	}
 	
@@ -33,6 +33,19 @@ public class cliente {
 	public void Efetua_pedido() {
 		// Implementação do método
 		System.out.println("Pedido efetuado!");
+	}
+	
+	// Main
+	public static void main(String[]args) {
+		
+		// Instanciar um objeto da classe Cliente
+		Cliente cliente1 = new Cliente();
+		
+		// Chamar o método
+		cliente1.Efetua_pedido();
+		
+		// Exibir uma mensagem de sucesso
+		System.out.println("Método main executado com sucesso!");
 	}
 	
 	public int getId_cliente() {
